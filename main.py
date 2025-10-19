@@ -8,7 +8,7 @@ import os
 
 # Load API key
 load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
 st.set_page_config(page_title="AI Image Filter App", page_icon="🖼️", layout="centered")
 st.title("AI Image Filter App")
